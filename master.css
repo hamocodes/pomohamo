@@ -89,7 +89,7 @@ header::before {
   font-size: 13px;
   padding: 8px 12px;
   margin-left: 10px;
-  min-width: 70px;
+  min-width: 50px;
 
 }
 
@@ -509,5 +509,18 @@ footer{
   .container{
     width: 1390px;
     margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .rptbtn,
+  .stg-btn,
+  .lgn-btn {
+    font-size: 0;
+  }
+  .rptbtni i,
+  .stg-btn i,
+  .lgn-btn  i {
+    font-size: 16px;
   }
 }
