@@ -29,7 +29,7 @@ body {
 }
 
 header {
-  padding: 10px 180px;
+  padding: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -41,16 +41,16 @@ header::before {
   content: "";
   position: absolute;
   bottom: 0;
-  width: 70%;
+  width: 98%;
   height: 1px;
   background-color: rgba(0,0,0,0.1);
-  left: 15%;
   border-radius: 50px;
 }
 
 .logo, .nav-btns {
   display: flex;
   align-items: center;
+  
 }
 
 .logo h1 {
@@ -149,7 +149,8 @@ header::before {
 }
 
 section {
-  width: 60%;
+  width: 53%;
+  min-width: 400px;
   background-color: var(--po);
   border-radius: 10px;
   margin: 20px auto;
