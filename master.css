@@ -152,7 +152,7 @@ header::before {
 
 section {
   width: 53%;
-  min-width: 400px;
+  min-width: 360px;
   background-color: var(--po);
   border-radius: 10px;
   margin: 20px auto;
