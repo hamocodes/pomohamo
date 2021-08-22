@@ -67,7 +67,7 @@ header::before {
   display: flex;
   -webkit-box-align: center;
   align-items: center;
-  margin-right: 5px;
+  margin-right: 8px;
 }
 
 .rptbtn,
