@@ -1,0 +1,23 @@
+{
+  "name": "Pomodoro",
+  "short_name": "Pomodoro",
+  "start_url": "/",
+  "icons": [
+    {
+      "src": "img/",
+      "sizes": "192×192",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "img/check.png",
+      "sizes": "512×512",
+      "type": "image/png",
+      "purpose": "maskable any"
+    }
+  ],
+  "theme-color": "#DB524D",
+  "background_color": "#DB524D",
+  "display": "fullscreen",
+  "orientation": "portrait"
+}

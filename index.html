@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--meta tags-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--links-->
+  <link rel="stylesheet" href="master.css" />
+  <link rel="mainfest" href="Mainfest.json" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+  <!--title-->
+  <title>Pomohamo</title>
+  <link rel="shortcut icon" href="img/check.png" />
+  <meta name="discription" content="Focus on any task you are working on." />
+  <!--open graph-->
+  <meta property="og:title" content="Pomohamo">
+  <meta property="og:description" content="Focus on any task you are working on" />
+  <!--scripts-->
+
+  <script src="https://kit.fontawesome.com/e4033ac786.js"></script>
+</head>
+<body>
+  <div class="container">
+  <!--header-->
+    <header>
+      
+      <!--logo-->
+      <div class="logo">
+        <img src="img/check.png" alt="pomodoro" />
+        <h1>Pomohamo</h1>
+      </div>
+      <!--nav-btns-->
+      <span class="nav-btns">
+        <button class="rptbtn">
+          <img src="img/report-icon.png" alt="" class="rpt-icon">
+          <div class="text">Report</div>
+        </button>
+        <div class="modal">
+          <div class="modal-content">
+            <img src="img/close-icon.png" alt="close icone" class="close-button">
+              <!--report-->
+              <div class="calc">
+                <div class="in">
+                  <div class="text">rounds: </div>
+                  <div class="round">0</div>
+                </div>
+                <div class="in">
+                  <div class="text">time: </div>
+                  <div class="pomos">0</div>
+                </div>
+              </div>
+          </div>
+      </div>
+
+
+        
+        <button class="stg-btn">
+          <img src="img/setting-icon.png" alt="" class="stg-icon">
+          <div class="text">Setting</div>
+        </button>
+
+        <button class="lgn-btn">
+          <img src="img/user-icon.png" alt="" class="lgn-icon">
+          <div class="text">Login</div>
+        </button>
+      </span>
+      
+    </header>
+    
+    <!--section-->
+    <section>
+      
+      <!--section header-->
+      <div class="header">
+        <button class="btn active" id="btn1">Pomodoro</button>
+        <button class="btn" id="btn2">short break</button>
+        <button class="btn" id="btn3">long break</button>
+      </div>
+      
+      <!--timer-->
+      <div class="timer" id="timer">25:00</div>
+      <div class="button btn-start" id="btnStart" onclick="startTimer">start</div>
+      <div class="button btn-start" id="btnStop" onclick="startTimer">stop</div>
+      
+    </section>
+    
+    <!--quote-->
+    <div class="quote">Time work!</div>
+    
+    
+    
+    <audio src="sound/click.wav" id="audio1"></audio>
+    
+    <audio src="sound/finished.mp3" id="audio2"></audio>
+
+    <!--Task-->
+
+    <div class="wrapper">
+      <header>Tasks</header>
+      <div class="inputField">
+        <input type="text" placeholder="Add your new Task">
+        <button><i class="fas fa-plus"></i></button>
+      </div>
+      <ul class="todoList">
+        <!-- data are comes from local storage -->
+      </ul>
+      <div class="pndg">
+        <span>You have <span class="pendingTasks"></span> pending tasks</span>
+        <button>Clear All</button>
+      </div>
+  </div>
+ 
+  </div>
+
+  <!--Footer-->
+    <footer>
+
+      <div class="footer-content">
+        <h3>Pomohamo</h3>
+        <p>Focus on any task you are working on.</p>
+        <ul class="socials">
+            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="https://twitter.com/hamocodes"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="https://www.instagram.com/hamocodes/"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="https://github.com/hamocodes"><i class="fa fa-github"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/hamocodes/"><i class="fa fa-linkedin-square"></i></a></li>
+        </ul>
+    </div>
+    <p class="footer-bottom">
+      Coded with <g-emoji class="g-emoji" alias="heart" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2764.png">
+    <img class="emoji" alt="heart" height="20" width="20" src="https://github.githubassets.com/images/icons/emoji/unicode/2764.png"></g-emoji> by <a href="https://www.linkedin.com/in/hamocodes/">hamocodes</a>
+    </p>
+
+    </footer>
+
+<!--JavaScript-->
+<script src="main.js"></script>
+</body>
+</html>
