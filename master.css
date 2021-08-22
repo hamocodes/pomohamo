@@ -235,6 +235,7 @@ section .btn-start:hover {
 .quote {
   width: fit-content;
   margin: 0 auto;
+  min-width: 360px;
   text-align: center;
 }
 
