@@ -26,6 +26,7 @@ body {
   font-family: 'Itim', Arial,Sans-Serif;
   color: white;
   transition: 0.5s;
+  min-width: 400px;
 }
 
 header {
