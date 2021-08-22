@@ -265,6 +265,7 @@ section .btn-start:hover {
 .wrapper{
   background: none;
   max-width: 585px;
+  min-width: 360px;
   width: 100%;
   margin: auto auto;
   padding: 25px;
