@@ -1,4 +1,4 @@
-# pomohamo
+# Pomohamo
 
 Focus on any task you are working on.
 
