@@ -1,5 +1,5 @@
 :root {
-  --pomodoro: #DB524D;
+  --pomohamo: #DB524D;
   --po: hsla(0, 0%, 100%, 0.1);
   
   --short-break: #478E92;
@@ -21,7 +21,7 @@
 }
 
 body {
-  background-color: var(--pomodoro);
+  background-color: var(--pomohamo);
   font-size: 18px;
   font-family: 'Itim', Arial,Sans-Serif;
   color: white;
@@ -199,7 +199,7 @@ section .btn-start {
   margin: 0 auto;
   background-color: white;
   padding: 20px 50px;
-  color: var(--pomodoro);
+  color: var(--pomohamo);
   text-align: center;
   font-size: 1rem;
   font-weight: bold;
@@ -464,7 +464,7 @@ footer{
 /* Dark Theme */
 @media (prefers-color-scheme: dark) {
   :root {
-    --pomodoro: #DB524D;
+    --pomohamo: #DB524D;
     --po: rgba(255, 255, 255, 0.1);
   }
 }
