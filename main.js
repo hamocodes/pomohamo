@@ -3,7 +3,7 @@ const poTimer = 25;
 const sbTimer = 5;
 const lbTimer = 15;
 // buttons header
-let pomodoro = document.getElementById("btn1");
+let pomohamo = document.getElementById("btn1");
 let shortBreak = document.getElementById("btn2");
 let longBreak = document.getElementById("btn3");
 // timer
@@ -44,7 +44,7 @@ let array = [
   "“You become what you study.”",
   "“Infinitely And Beyond.”",
   "“study well become great.”",
-  "“Do one pomodoro today better than nothing.”",
+  "“Do one pomohamo today better than nothing.”",
   `Don't stop</br>Don't give up.`,
   "“You don’t have to be great to start, but you have to start to be great.”",
   "“Push yourself, because no one else is going to do it for you.”",
@@ -70,16 +70,16 @@ function update_data(type, value) {
   }
 }
 
-pomodoro.onclick = function() {
+pomohamo.onclick = function() {
 
-  if (pomodoro.classList.contains("active")) {
+  if (pomohamo.classList.contains("active")) {
   } else {
-    body.style.backgroundColor = "var(--pomodoro)";
-    pomodoro.classList.add("active");
+    body.style.backgroundColor = "var(--pomohamo)";
+    pomohamo.classList.add("active");
     shortBreak.classList.remove("active");
     longBreak.classList.remove("active");
-    start.style.color = "var(--pomodoro)";
-    stop.style.color = "var(--pomodoro)";
+    start.style.color = "var(--pomohamo)";
+    stop.style.color = "var(--pomohamo)";
     section.style.backgroundColor = "var(--po)";
     clearInterval(interval);
     setTimeout(function() {
@@ -99,7 +99,7 @@ shortBreak.onclick = function() {
   if (shortBreak.classList.contains("active")) {
   } else {
     body.style.backgroundColor = "var(--short-break)";
-    pomodoro.classList.remove("active");
+    pomohamo.classList.remove("active");
     shortBreak.classList.add("active");
     longBreak.classList.remove("active");
     start.style.color = "var(--short-break)";
@@ -123,7 +123,7 @@ longBreak.onclick = function() {
   if (longBreak.classList.contains("active")) {
   } else {
     body.style.backgroundColor = "var(--long-break)";
-    pomodoro.classList.remove("active");
+    pomohamo.classList.remove("active");
     shortBreak.classList.remove("active");
     longBreak.classList.add("active");
     start.style.color = "var(--long-break)";
@@ -156,7 +156,7 @@ start.onclick = function startTimer() {
   let audio = document.querySelector("audio");
   audio.play();
   
-  if (pomodoro.classList.contains("active")) {
+  if (pomohamo.classList.contains("active")) {
     let time = poTimer * 60;
     
     interval = setInterval(function() {
@@ -176,7 +176,7 @@ start.onclick = function startTimer() {
       if (time > 0) {
         time -= 1;
       } else {
-          pomodoro.classList.remove("active");
+          pomohamo.classList.remove("active");
           clearInterval(interval);
           alarm.play();
           setTimeout(function() {
@@ -230,10 +230,10 @@ start.onclick = function startTimer() {
           time -= 1;
         } else {
             shortBreak.classList.remove("active");
-            pomodoro.classList.add("active");
-            body.style.backgroundColor = "var(--pomodoro)";
-            start.style.color = "var(--pomodoro)";
-            stop.style.color = "var(--pomodoro)";
+            pomohamo.classList.add("active");
+            body.style.backgroundColor = "var(--pomohamo)";
+            start.style.color = "var(--pomohamo)";
+            stop.style.color = "var(--pomohamo)";
             section.style.backgroundColor = "var(--po)";
             clearInterval(interval);
             timer.innerHTML = "25:00";
@@ -268,10 +268,10 @@ start.onclick = function startTimer() {
           time -= 1;
         } else {
             longBreak.classList.remove("active");
-            pomodoro.classList.add("active");
-            body.style.backgroundColor = "var(---pomodoro)";
-            start.style.color = "var(--pomodoro)";
-            stop.style.color = "var(--pomodoro)";
+            pomohamo.classList.add("active");
+            body.style.backgroundColor = "var(---pomohamo)";
+            start.style.color = "var(--pomohamo)";
+            stop.style.color = "var(--pomohamo)";
             section.style.backgroundColor = "var(--po)";
             clearInterval(interval);
             timer.innerHTML = "25:00";
@@ -312,7 +312,7 @@ stop.onclick = function stopTimer() {
 // problems
 
 /*
-  - record pomodoros
+  - record pomohamos
       -- after 4 pomodors long break
   // i can do it
   - quote under timer
